@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "yargs": "^17.7.2"
+  }
+}
