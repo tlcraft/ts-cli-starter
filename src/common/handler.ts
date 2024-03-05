@@ -1,8 +1,10 @@
+import { loadConfig } from "../config/load-config";
+import { BaseArguments } from "./interfaces/base-arguments";
 import { Options } from "./interfaces/options.interface";
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 
-export abstract class BaseHandler<T> {
+export abstract class BaseHandler<T extends BaseArguments> {
     protected argv!: T;
 
     constructor(private readonly options: Options = {}) { }
@@ -20,8 +22,7 @@ export abstract class BaseHandler<T> {
     }
 
     protected loadConfig(): void {
-        // load the env from common config
-        console.log("Args: ", this.argv);
+        loadConfig(this.argv.env);
     }
 
     protected abstract run(): void;
