@@ -9,7 +9,7 @@ export class HelloExample extends BaseHandler<HelloArguments> {
     console.log(`Hello ${name}! `);
 
 
-    console.log('Name: ', process.env.DEFAULT_NAME);
+    console.log('\nName: ', process.env.DEFAULT_NAME);
     console.log('Env: ', process.env.ENV);
   }
 }

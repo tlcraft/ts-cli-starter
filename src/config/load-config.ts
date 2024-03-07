@@ -2,7 +2,7 @@ import * as dotenv from "dotenv";
 import { Environments } from "../enums/environments";
 
 export const loadConfig = (env: string): void => {
-    console.log(`Loading ${env} config...`);
+    console.log(`Loading ${env} config...\n\n`);
 
     dotenv.config({ path: __dirname + '/.env-common' });
 
