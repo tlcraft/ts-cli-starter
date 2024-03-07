@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "hello": "npx ts-node src/hello/hello.ts"
+  },
   "devDependencies": {
     "typescript": "^5.3.3"
   },
