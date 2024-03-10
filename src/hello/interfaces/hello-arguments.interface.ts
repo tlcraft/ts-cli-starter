@@ -1,5 +1,5 @@
-import { BaseArguments } from "../../common/interfaces/base-arguments";
+import { EnvArguments } from "../../common/interfaces/env-arguments";
 
-export interface HelloArguments extends BaseArguments {
+export interface HelloArguments extends EnvArguments {
     who: string;
 }
