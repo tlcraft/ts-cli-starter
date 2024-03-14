@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "moment-timezone": "^0.5.45",
     "ts-node": "^10.9.2",
     "yargs": "^17.7.2"
   }
