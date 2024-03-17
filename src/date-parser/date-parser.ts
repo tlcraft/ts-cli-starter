@@ -5,8 +5,15 @@ import { BaseArguments } from "../common/interfaces/base-arguments";
 export class DateParser extends BaseHandler<BaseArguments> {
     run(): void {
         console.log("Date Parser");
-        const momentDate = moment(new Date());
-        console.log("momentDate", momentDate);
+        const momentCurrentDate = moment(new Date());
+        console.log("momentCurrentDate", momentCurrentDate);
+
+        const eastern = moment.tz(momentCurrentDate, "America/New_York");
+        console.log("eastern", eastern);
+
+        const dateString = '03/16/2024, 00:00:00';
+        const momentFromDateString = moment(dateString, "MM/DD/YYYY, HH:mm:ss").tz("America/New_York");
+        console.log("momentFromDateString", momentFromDateString);
                 
     }
 }
