@@ -13,7 +13,11 @@ export class DateParser extends BaseHandler<BaseArguments> {
 
         const dateString = '03/16/2024, 00:00:00';
         const momentFromDateString = moment(dateString, 'MM/DD/YYYY, HH:mm:ss').tz('America/New_York');
-        console.log('momentFromDateString', momentFromDateString); 
+        console.log('momentFromDateString', momentFromDateString);
+
+        moment.tz.setDefault('America/New_York');
+        const momentWithDefaultFromDateString = moment(dateString, 'MM/DD/YYYY, HH:mm:ss');
+        console.log('momentWithDefaultFromDateString', momentWithDefaultFromDateString);
     }
 }
 
