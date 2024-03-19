@@ -2,8 +2,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "hello": "npx ts-node src/hello/hello.ts",
-    "date": "npx ts-node src/date-parser/date-parser.ts"
+    "hello": "npx ts-node src/scripts/hello/hello.ts",
+    "date": "npx ts-node src/scripts/date-parser/date-parser.ts"
   },
   "devDependencies": {
     "typescript": "^5.3.3"

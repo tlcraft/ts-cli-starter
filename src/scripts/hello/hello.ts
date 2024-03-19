@@ -1,6 +1,6 @@
-import { EnvHandler } from "../common/env-handler";
-import { Options } from "../common/interfaces/options.interface";
-import { Environments } from "../enums/environments";
+import { EnvHandler } from "../../common/env-handler";
+import { Options } from "../../common/interfaces/options.interface";
+import { Environments } from "../../enums/environments";
 import { HelloArguments } from "./interfaces/hello-arguments.interface";
 
 export class HelloExample extends EnvHandler<HelloArguments> {

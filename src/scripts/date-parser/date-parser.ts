@@ -1,6 +1,6 @@
 import moment from 'moment-timezone';
-import { BaseHandler } from '../common/handler';
-import { BaseArguments } from '../common/interfaces/base-arguments';
+import { BaseHandler } from '../../common/handler';
+import { BaseArguments } from '../../common/interfaces/base-arguments';
 
 export class DateParser extends BaseHandler<BaseArguments> {
     run(): void {
