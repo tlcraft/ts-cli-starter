@@ -1,9 +1,9 @@
-import { BaseHandler } from "../common/handler";
-import { Options } from "../common/interfaces/options.interface";
-import { Environments } from "../enums/environments";
+import { EnvHandler } from "../../common/env-handler";
+import { Options } from "../../common/interfaces/options.interface";
+import { Environments } from "../../enums/environments";
 import { HelloArguments } from "./interfaces/hello-arguments.interface";
 
-export class HelloExample extends BaseHandler<HelloArguments> {
+export class HelloExample extends EnvHandler<HelloArguments> {
   run(): void {
     const name = this.argv.who ?? process.env.DEFAULT_NAME;
     console.log(`Hello ${name}! `);

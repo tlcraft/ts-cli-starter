@@ -2,13 +2,15 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "hello": "npx ts-node src/hello/hello.ts"
+    "hello": "npx ts-node src/scripts/hello/hello.ts",
+    "date": "npx ts-node src/scripts/date-parser/date-parser.ts"
   },
   "devDependencies": {
     "typescript": "^5.3.3"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "moment-timezone": "^0.5.45",
     "ts-node": "^10.9.2",
     "yargs": "^17.7.2"
   }

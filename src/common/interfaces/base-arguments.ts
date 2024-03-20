@@ -1,3 +1,1 @@
-export interface BaseArguments {
-    env: string;
-}
+export interface BaseArguments {}
