@@ -1,7 +1,7 @@
-import { loadConfig } from "../config/load-config";
-import { BaseHandler } from "./handler";
-import { EnvArguments } from "./interfaces/env-arguments";
-import { Options } from "./interfaces/options.interface";
+import { loadConfig } from "../../config/load-config";
+import { BaseHandler } from "./base-handler";
+import { EnvArguments } from "../interfaces/env-arguments";
+import { Options } from "../interfaces/options.interface";
 
 export abstract class EnvHandler<T extends EnvArguments> extends BaseHandler<T> {
     constructor(protected readonly options: Options = {}) { 
