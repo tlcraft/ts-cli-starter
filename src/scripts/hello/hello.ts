@@ -1,4 +1,4 @@
-import { EnvHandler } from "../../common/env-handler";
+import { EnvHandler } from "../../common/handlers/env-handler";
 import { Options } from "../../common/interfaces/options.interface";
 import { Environments } from "../../enums/environments";
 import { HelloArguments } from "./interfaces/hello-arguments.interface";
