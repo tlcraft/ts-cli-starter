@@ -1,4 +1,4 @@
-import { BaseArguments } from "../interfaces/base-arguments";
+import { BaseArguments } from "../interfaces/base-arguments.interface";
 import { Options } from "../interfaces/options.interface";
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
