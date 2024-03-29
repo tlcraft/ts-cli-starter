@@ -2,6 +2,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
+    "lint": "npx eslint .",
+    "lint-fix": "npx eslint . --fix",
     "hello": "npx ts-node src/scripts/hello/hello.ts",
     "date": "npx ts-node src/scripts/date-parser/date-parser.ts"
   },
@@ -11,6 +13,8 @@
     "typescript-eslint": "^7.4.0"
   },
   "dependencies": {
+    "@types/eslint__js": "^8.42.3",
+    "@types/yargs": "^17.0.32",
     "dotenv": "^16.4.5",
     "moment-timezone": "^0.5.45",
     "ts-node": "^10.9.2",
