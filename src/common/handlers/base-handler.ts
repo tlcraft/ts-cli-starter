@@ -1,12 +1,12 @@
 import { BaseArguments } from "../interfaces/base-arguments.interface";
-import { Options } from "../interfaces/options.interface";
-const yargs = require('yargs/yargs');
-const { hideBin } = require('yargs/helpers');
+import { YargsOptions } from "../interfaces/options.interface";
+import yargs from 'yargs/yargs';
+import { hideBin } from 'yargs/helpers';
 
 export abstract class BaseHandler<T extends BaseArguments> {
     protected argv!: T;
 
-    constructor(protected readonly options: Options = {}) { }
+    constructor(protected readonly options: YargsOptions = {}) { }
 
     execute(): void {
         this.readParameters();

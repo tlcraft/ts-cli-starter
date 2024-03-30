@@ -1,5 +1,5 @@
 import { EnvHandler } from "../../common/handlers/env-handler";
-import { Options } from "../../common/interfaces/options.interface";
+import { YargsOptions } from "../../common/interfaces/options.interface";
 import { Environments } from "../../common/enums/environments";
 import { HelloArguments } from "./interfaces/hello-arguments.interface";
 
@@ -14,7 +14,7 @@ export class HelloExample extends EnvHandler<HelloArguments> {
   }
 }
 
-const helloOptions: Options = {
+const helloOptions: YargsOptions = {
   env: { default: Environments.Dev, choices: [Environments.Dev, Environments.Test] },
   who: { }
 }
