@@ -1,9 +1,9 @@
-import { BaseArguments } from "../interfaces/base-arguments.interface";
 import { YargsOptions } from "../interfaces/options.interface";
 import yargs from 'yargs/yargs';
 import { hideBin } from 'yargs/helpers';
+import { Arguments } from "yargs";
 
-export abstract class BaseHandler<T extends BaseArguments> {
+export abstract class BaseHandler<T extends Arguments> {
     protected argv!: T;
 
     constructor(protected readonly options: YargsOptions = {}) { }
