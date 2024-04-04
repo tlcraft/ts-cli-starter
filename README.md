@@ -11,5 +11,6 @@ You can run a command from the `package.json` file's `scripts` section with para
 ## Resources
 
 - [How To Set Up a New TypeScript Project](https://www.digitalocean.com/community/tutorials/typescript-new-project)
+- [Add ESLint to your project](https://typescript-eslint.io/getting-started/)
 - [yargs](https://www.npmjs.com/package/yargs)
 - [dotenv](https://www.npmjs.com/package/dotenv)
