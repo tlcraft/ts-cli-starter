@@ -1,5 +1,5 @@
-import * as dotenv from "dotenv";
-import { Environments } from "../common/enums/environments";
+import * as dotenv from 'dotenv';
+import { Environments } from '../common/enums/environments';
 
 export const loadConfig = (env: string): void => {
     console.log(`Loading ${env} config...\n\n`);

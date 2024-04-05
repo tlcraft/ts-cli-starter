@@ -7,9 +7,9 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   {  
-    ignores: ["dist/**"],
+    ignores: ['dist/**'],
     rules: {
-      quotes: [2, "single", { "avoidEscape": true }]
+      quotes: [2, 'single', { 'avoidEscape': true }]
     }
   }
 );

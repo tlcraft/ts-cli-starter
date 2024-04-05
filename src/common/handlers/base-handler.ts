@@ -1,7 +1,7 @@
-import { YargsOptions } from "../interfaces/options.interface";
+import { YargsOptions } from '../interfaces/options.interface';
 import yargs from 'yargs/yargs';
 import { hideBin } from 'yargs/helpers';
-import { Arguments } from "yargs";
+import { Arguments } from 'yargs';
 
 export abstract class BaseHandler<T extends Arguments> {
     protected argv!: T;
@@ -21,7 +21,7 @@ export abstract class BaseHandler<T extends Arguments> {
     }
 
     protected loadConfig(): void {
-        console.log("No environment configuration is being loaded.\n\n");
+        console.log('No environment configuration is being loaded.\n\n');
     }
 
     protected abstract run(): void;
