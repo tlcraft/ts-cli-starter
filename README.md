@@ -12,5 +12,6 @@ You can run a command from the `package.json` file's `scripts` section with para
 
 - [How To Set Up a New TypeScript Project](https://www.digitalocean.com/community/tutorials/typescript-new-project)
 - [Add ESLint to your project](https://typescript-eslint.io/getting-started/)
+    - [ESLint Config Example](https://github.com/typescript-eslint/typescript-eslint/blob/main/eslint.config.mjs)
 - [yargs](https://www.npmjs.com/package/yargs)
 - [dotenv](https://www.npmjs.com/package/dotenv)
