@@ -1,8 +1,8 @@
-import moment from 'moment-timezone';
+import { Arguments } from 'yargs';
 import { BaseHandler } from '../../common/handlers/base-handler';
-import { BaseArguments } from '../../common/interfaces/base-arguments.interface';
+import moment from 'moment-timezone';
 
-export class DateParser extends BaseHandler<BaseArguments> {
+export class DateParser extends BaseHandler<Arguments> {
     run(): void {
         console.log('Date Parser');
         const momentCurrentDate = moment(new Date());
