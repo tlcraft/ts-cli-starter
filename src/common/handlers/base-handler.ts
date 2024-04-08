@@ -1,12 +1,12 @@
-import { BaseArguments } from "../interfaces/base-arguments.interface";
-import { Options } from "../interfaces/options.interface";
-const yargs = require('yargs/yargs');
-const { hideBin } = require('yargs/helpers');
+import { YargsOptions } from '../interfaces/options.interface';
+import yargs from 'yargs/yargs';
+import { hideBin } from 'yargs/helpers';
+import { Arguments } from 'yargs';
 
-export abstract class BaseHandler<T extends BaseArguments> {
+export abstract class BaseHandler<T extends Arguments> {
     protected argv!: T;
 
-    constructor(protected readonly options: Options = {}) { }
+    constructor(protected readonly options: YargsOptions = {}) { }
 
     execute(): void {
         this.readParameters();
@@ -21,7 +21,7 @@ export abstract class BaseHandler<T extends BaseArguments> {
     }
 
     protected loadConfig(): void {
-        console.log("No environment configuration is being loaded.\n\n");
+        console.log('No environment configuration is being loaded.\n\n');
     }
 
     protected abstract run(): void;

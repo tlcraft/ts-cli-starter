@@ -1,5 +1,5 @@
-import { BaseArguments } from "./base-arguments.interface";
+import { Arguments } from 'yargs';
 
-export interface EnvArguments extends BaseArguments {
+export interface EnvArguments extends Arguments {
     env: string;
 }
